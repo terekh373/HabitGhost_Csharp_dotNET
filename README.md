@@ -4,10 +4,10 @@
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![WPF](https://img.shields.io/badge/WPF-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![WinForms](https://img.shields.io/badge/WinForms-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 
-> 🏆 **1st place** at IT STEP Academy stream — Final C# / .NET course project  
+> 🏆 **1st place out of 4 teams** in the IT STEP Academy cohort — final C# / .NET course project  
 > A desktop Windows app for tracking habits, goals, and productivity analytics
 
 </div>
@@ -25,7 +25,7 @@
 
 ## 📖 About
 
-HabitGhost helps users build healthy habits, set goals, and track progress over time. The app communicates with a SQL Server database via TCP, runs silently in the background through a system tray icon, and supports auto-launch on Windows startup.
+HabitGhost helps users build healthy habits, set goals, and track progress over time. The WinForms client talks over TCP to a separate server that stores data in SQL Server. The client runs silently in the background through a system tray icon, and supports auto-launch on Windows startup.
 
 ---
 
@@ -33,7 +33,8 @@ HabitGhost helps users build healthy habits, set goals, and track progress over 
 
 | Category | Technologies |
 |----------|-------------|
-| 💻 Language / Platform | C#, .NET, WPF |
+| 💻 Client | C#, WinForms (.NET Framework 4.7.2) |
+| 🖧 Server | C#, .NET 9 TCP server, Dapper, Microsoft.Data.SqlClient |
 | 🗄️ Database | SQL Server, MS SSMS |
 | 🌐 Network | TCP Server, Client-Server Architecture |
 | 🔧 Tools | Git, GitHub, Visual Studio |
@@ -63,6 +64,7 @@ HabitGhost helps users build healthy habits, set goals, and track progress over 
 > Project developed by a team of **4 people**. I was the **Team Lead**.
 
 **My responsibilities:**
+- 💻 Built the WinForms client (the TCP server was written by a teammate)
 - 🎨 Full UI/UX design — all tabs, tray icon, settings panel, dark/light theme
 - 🏗️ Data models: `Habit`, `Goal`, `Reminder`, `User`
 - ⚙️ Core habit manager logic and business rules
@@ -75,7 +77,7 @@ HabitGhost helps users build healthy habits, set goals, and track progress over 
 
 ### Prerequisites
 - Windows 10 / 11
-- .NET 6.0 or higher
+- .NET Framework 4.7.2 (client) and .NET 9 SDK (server)
 - SQL Server (local or remote)
 - Visual Studio 2022
 
@@ -101,7 +103,7 @@ git clone https://github.com/terekh373/HabitGhost_Csharp_dotNET.git
 
 | Metric | Value |
 |--------|-------|
-| 🏆 Result | 1st place at academy stream |
+| 🏆 Result | 1st place out of 4 teams |
 | 👥 Team size | 4 developers |
 | 🗄️ Database | SQL Server |
 | 🖥️ Platform | Windows desktop |
@@ -110,4 +112,4 @@ git clone https://github.com/terekh373/HabitGhost_Csharp_dotNET.git
 
 ## 👤 Author
 
-**Anton Tereshchenko** — [github.com/terekh373](https://github.com/terekh373) · [LinkedIn](https://www.linkedin.com/in/anton-tereshchenko-o)
+**Anton Tereshchenko** — [github.com/terekh373](https://github.com/terekh373) · [LinkedIn](https://www.linkedin.com/in/anton-e-tereshchenko)
